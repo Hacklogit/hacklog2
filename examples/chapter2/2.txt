@@ -1,0 +1,7 @@
+# Seconda interfaccia di rete, configurata in modo statico
+auto enp0s8
+iface enp0s8 inet static
+address 20.0.0.3
+netmask 255.255.255.0
+gateway 20.0.0.1
+broadcast 20.0.0.0
