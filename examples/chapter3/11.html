@@ -1,0 +1,49 @@
+<html>
+	<body>
+<?php
+	//Avvio il collezionamento sessioni
+	session_start();
+	//Verifico se in query-string è presente "password"
+	if(isset($_POST['password']))
+	{
+		//Creo la variabile $password
+		$password = $_POST['password'];
+		//Mi connetto al database forum
+		$conn = @mysqli_connect('localhost', 'user', 	'passw0rd', 'forum');
+		//Se la connessione non va a buon fine
+		if(!$conn)
+		{
+			//Chiudi tutto
+			die("Impossibile connettersi al Database");
+		}
+		//Creo la variabile $sql con la query
+		$sql = "SELECT username, password FROM utenti WHERE password='$password'";
+		//Eseguo la query nel database
+		$query = mysqli_query($conn, $sql);
+		//Raccolgo tutti i valori della query
+		while ($row = mysqli_fetch_array($query))
+		{
+			/* Creo la variabile $username che conterrà il 		valore "username" trovato nel database */
+			$username = $row['username'];
+			// Creo la sessione
+			$_SESSION['nome_sessione'] = $username;
+		}
+		// Chiudo la connessione al Database
+		mysqli_close($conn);
+	// Stampa $password, quindi torna a capo (<br />)
+	echo("Hai digitato:" . $password . "<br />");
+	}
+	// Se la sessione esiste
+		if(isset($_SESSION['nome_sessione']))
+		{
+			// Stampo lo username a video					echo("Il tuo username è: " . 					$_SESSION['nome_sessione']);
+		} else	{
+			echo("Non hai specificato alcuna pass valida");
+		}
+	?>
+		<form name="login" method="post" action="login.php">
+			<input type="password" name="password" />
+			<input type="submit" value="Accedi" />	
+		</form>
+	</body>
+</html>
