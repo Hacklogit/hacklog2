@@ -1,0 +1,10 @@
+Hai scritto: <strong id="yourtext"></strong> <hr />
+Digita qualcosa: <input id="yourinput" type="text" onkeyup="copyFunction()" style="width:500px">
+
+<script>
+	function copyFunction() {
+		var yourinput = document.getElementById('yourinput');
+		var yourtext = document.getElementById('yourtext');
+		yourtext.innerHTML = yourinput.value;
+	}
+</script>
