@@ -12,9 +12,11 @@ function ()
 
 	if (xmlhttp . readyState == 4 && xmlhttp . status == 200) {
 
-		// In text salvo i risultati della pagina         var text = xmlhttp.responseText;         // Definisco la regex per cercare user_token
+		// In text salvo i risultati della pagina 
+                var text = xmlhttp.responseText;         
 
-		var regex = / user_token' value\=\'(.*?)\' \/\>/;
+                // Definisco la regex per cercare user_token
+		var regex = '/ user_token' value\=\'(.*?)\' \/\>/';
 
         // In match carico i risultati (come array)
 
@@ -28,7 +30,8 @@ function ()
 
         alert(token);
 
-// Rinvio l'utenteallapaginadicambiopassword location . href = csrf_url + '?password_new=newpass&password_conf=newpass&Change=Change&user_token=' + token;
+// Rinvio utente alla pagina di cambio password 
+        location . href = csrf_url + '?password_new=newpass&password_conf=newpass&Change=Change&user_token=' + token;
 
 	}
 };
