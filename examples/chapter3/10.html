@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<?php
+			if(isset($_POST['password']))
+			{
+				$password = $_POST['password'];
+				session_start();
+				$_SESSION['nome_sessione'] = $password;
+				echo("La tua pass è: " . 						$_SESSION['nome_sessione']);
+			}
+			else
+			{
+				echo("Non hai specificato alcuna pass");
+			}
+		?>
+		<form name="login" method="post" 					action="login.php">
+			<input type="password" name="password" />
+			<input type="submit" value="Accedi" />	
+		</form>
+	</body>
+</html>
