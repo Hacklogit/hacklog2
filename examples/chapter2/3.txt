@@ -1,0 +1,16 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+source /etc/network/interfaces.d/*
+# The loopback network interface
+auto lo
+iface lo inet loopback
+# La prima interfaccia di rete, collegata a Internet
+auto eth0
+iface eth0 inet dhcp
+# Seconda interfaccia di rete, configurata in modo statico
+auto eth1
+iface eth1 inet static
+address 20.0.0.4
+netmask 255.255.255.0
+gateway 20.0.0.1
+broadcast 20.0.0.0
