@@ -5,12 +5,12 @@ source /etc/network/interfaces.d/*
 auto lo
 iface lo inet loopback
 # La prima interfaccia di rete, collegata a Internet
-auto enp0s3
-iface enp0s3 inet dhcp
+auto eth0
+iface eth0 inet dhcp
 # Seconda interfaccia di rete, configurata in modo statico
-auto enp0s8
-iface enp0s8 inet static
-address 20.0.0.3
+auto eth1
+iface eth1 inet static
+address 20.0.0.4
 netmask 255.255.255.0
 gateway 20.0.0.1
 broadcast 20.0.0.0
