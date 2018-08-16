@@ -1,0 +1,3 @@
+git clone https://github.com/nanopony/apache-scalp.git
+cd apache-scalp
+wget https://raw.githubusercontent.com/PHPIDS/PHPIDS/master/lib/IDS/default_filter.xml
