@@ -28,7 +28,7 @@ E riavviare:
 
 ```sudo systemctl restart apache2```
 
-## (DEBIAN) bash: xxx comando non trovato**
+## (DEBIAN) bash: xxx comando non trovato
 Causa: L'utente ha installato Debian 10 (anzichè 9 come richiesto dal manuale). Il comando "su" non è completo.
 
 Soluzione: La versione 10 di Debian potrebbe causare problemi con l'uso di su. Si consiglia di usare "su -" al suo posto.
