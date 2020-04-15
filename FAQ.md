@@ -1,5 +1,15 @@
 # FAQ - Domande Frequenti
 Al fine di garantire una stabilità nel progetto, nel tempo che intercorre tra un aggiornamento di un volume all'altro, useremo questo spazio per risolvere i problemi comuni che si verificano durante il percorso.
+
+## (DEBIAN) Quale versione uso?
+Causa: L'utente potrebbe aver installato la versione 10 di Debian. Quella supportata dal corso è la 9.
+
+Soluzione: L'utente può lanciare il comando:
+
+```cat /etc/issue```
+
+Se riportata la versione 10, e non ha le competenze per amministrare una macchina GNU/Linux, si consiglia di riformattare con la versione 9. Il link è [64bit](https://cdimage.debian.org/cdimage/archive/9.12.0/amd64/iso-cd/) oppure (32bit)[https://cdimage.debian.org/cdimage/archive/9.12.0/i386/iso-cd/].
+
   
 ## (DEBIAN) Impossibile trovare il pacchetto libapache2-mod-php7.0
 Causa: L'utente ha installato Debian 10 (anziché 9 come richiesto dal manuale). La versione PHP non è più 7.0 ma 7.3
