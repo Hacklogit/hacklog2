@@ -2,9 +2,9 @@
 Al fine di garantire una stabilità nel progetto, nel tempo che intercorre tra un aggiornamento di un volume all'altro, useremo questo spazio per risolvere i problemi comuni che si verificano durante il percorso.
 
 ## (DEBIAN) Quale versione uso?
-Causa: L'utente potrebbe aver installato la versione 10 di Debian. Quella supportata dal corso è la 9.
+**Causa**: L'utente potrebbe aver installato la versione 10 di Debian. Quella supportata dal corso è la 9.
 
-Soluzione: L'utente può lanciare il comando:
+**Soluzione**: L'utente può lanciare il comando:
 
 ```cat /etc/issue```
 
@@ -12,11 +12,11 @@ Se riportata la versione 10, e non ha le competenze per amministrare una macchin
 
   
 ## (DEBIAN) Impossibile trovare il pacchetto libapache2-mod-php7.0
-Causa: L'utente ha installato Debian 10 (anziché 9 come richiesto dal manuale). La versione PHP non è più 7.0 ma 7.3
+**Causa**: L'utente ha installato Debian 10 (anziché 9 come richiesto dal manuale). La versione PHP non è più 7.0 ma 7.3
 
-Soluzione 1: L'utente dovrebbe riformattare la macchina victim usando Debian 9, anzichè 10. 
+**Soluzione 1**: L'utente dovrebbe riformattare la macchina victim usando Debian 9, anzichè 10. 
 
-Soluzione 2: L'utente può utilizzare una versione più aggiornata di PHP (la 7.3).
+**Soluzione 2**: L'utente può utilizzare una versione più aggiornata di PHP (la 7.3).
 
 Deve installare tutto il pacchetto PHP:
 
@@ -39,6 +39,6 @@ E riavviare:
 ```sudo systemctl restart apache2```
 
 ## (DEBIAN) bash: xxx comando non trovato
-Causa: L'utente ha installato Debian 10 (anzichè 9 come richiesto dal manuale). Il comando "su" non è completo.
+**Causa**: L'utente ha installato Debian 10 (anzichè 9 come richiesto dal manuale). Il comando "su" non è completo.
 
-Soluzione: La versione 10 di Debian potrebbe causare problemi con l'uso di su. Si consiglia di usare "su -" al suo posto.
+**Soluzione**: La versione 10 di Debian potrebbe causare problemi con l'uso di su. Si consiglia di usare "su -" al suo posto.
