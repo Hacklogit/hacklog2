@@ -8,7 +8,7 @@ Soluzione: L'utente può lanciare il comando:
 
 ```cat /etc/issue```
 
-Se riportata la versione 10, e non ha le competenze per amministrare una macchina GNU/Linux, si consiglia di riformattare con la versione 9. Il link è [64bit](https://cdimage.debian.org/cdimage/archive/9.12.0/amd64/iso-cd/) oppure (32bit)[https://cdimage.debian.org/cdimage/archive/9.12.0/i386/iso-cd/].
+Se riportata la versione 10, e non ha le competenze per amministrare una macchina GNU/Linux, si consiglia di riformattare con la versione 9. Il link è [64bit](https://cdimage.debian.org/cdimage/archive/9.12.0/amd64/iso-cd/) oppure [32bit](https://cdimage.debian.org/cdimage/archive/9.12.0/i386/iso-cd/).
 
   
 ## (DEBIAN) Impossibile trovare il pacchetto libapache2-mod-php7.0
